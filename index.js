@@ -27,7 +27,9 @@ async function sendEmail({ email,html}) {
 const send = async () => {
     const html = fs.readFileSync('./index.html', {encoding:'utf-8'})
 
-    let result = await sendEmail({email:'184588829247@qq.com',html})
-    console.log(result)
+    let result = await sendEmail({email:'1845829247@qq.com',html})
+    
+ await sendEmail({email:'499339182@qq.com',html})
+
 }
  send()
