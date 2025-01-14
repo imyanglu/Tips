@@ -1,12 +1,9 @@
 name: tipsaction
 
 on:
-  push:
-    branches:
-      - main
   schedule:
     # 每天 UTC 时间 6:00 执行
-    - cron: "38 10 * * *"
+    - cron: "40 10 * * *"
 
 jobs:
   run-js-task:
