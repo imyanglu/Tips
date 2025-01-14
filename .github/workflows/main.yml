@@ -3,7 +3,7 @@ name: tipsaction
 on:
   schedule:
     # 每天 UTC 时间 6:00 执行
-    - cron: 30 11 * * *"
+    - cron: "42 14 * * *"
 
 jobs:
   run-js-task:
