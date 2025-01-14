@@ -1,6 +1,7 @@
 const nodemailer = require("nodemailer");
+const fs = require('fs')
 // 发送邮件
-async function sendEmail({ email, code }) {
+async function sendEmail({ email,html}) {
     let transporter = await nodemailer.createTransport({
         host: "smtp.163.com",
         port: 465,
@@ -15,10 +16,18 @@ async function sendEmail({ email, code }) {
     let info = await transporter.sendMail({
         from: 'wii4winnie@163.com', // sender address
         to: email, // list of receivers
-        subject: "Lover 验证码" + code, // Subject line
-        text: "time:" + new Date().toString(), // plain text body
-        html: `code is <strong>${code}</strong>`, // html body
+        subject:"来自最好的Wii的提醒", // Subject line
+        text: "text", // plain text body
+        html, // html body
     });
+  
 
 }
-sendEmail("499339182@qq.com",'55555')
+
+const send = async () => {
+    const html = fs.readFileSync('./index.html', {encoding:'utf-8'})
+
+    let result = await sendEmail({email:'499339182@qq.com',html})
+    console.log(result)
+}
+ send()

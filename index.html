@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Wii`s提醒</title>
+  <style>
+
+    body {
+      text-align: center;
+      width:100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 2px 12px;
+      height:100vh;
+      background: #fff;
+    }
+
+.popup {
+    box-shadow: 0 .25rem .5rem rgba(0,0,0,.05),0 1.5rem 2.2rem rgba(0,0,0,.1)!important;
+    overflow: hidden;
+
+    background: #fff;
+    width: calc(100vw - 24px);
+    border-radius: 18px;
+    padding-bottom: 12px;
+}
+    .navbar{
+      margin-top: 24px;
+      width: calc(100vw - 24px);
+      max-width: 500px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+ 
+    .navbar img{
+      width: 100%;
+    }
+    .main{
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main">
+  <strong style="text-align: center;font-size: 20px;">🚨吃药时间到了哦!别忘记保护自己的身体哦!</strong>
+  <div class="navbar">
+    <img src="https://pic1.imgdb.cn/item/6786325ed0e0a243d4f430d9.png"/>
+  </div>
+  <div class="popup popup-tips none popupShow" id="popup">
+    <div class="popup-header">
+  
+    </div>
+    <div style="display: flex;justify-content: center;">
+      <img src="https://pic1.imgdb.cn/item/67863951d0e0a243d4f43286.gif"/>
+    </div>
+
+   
+  </div>
+  </div>
+
+</body>
+
+</html>
