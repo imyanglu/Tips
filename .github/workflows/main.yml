@@ -3,7 +3,7 @@ name: Scheduled JavaScript Task
 on:
   schedule:
     # 每天 UTC 时间 6:00 执行
-    - cron: "24 4 * * *"
+    - cron: "30 4 * * *"
 
 jobs:
   run-js-task:
