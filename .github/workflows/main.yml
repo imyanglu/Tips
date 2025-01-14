@@ -1,4 +1,4 @@
-name: Scheduled JavaScript Task
+name: tipsaction
 
 on:
   schedule:
