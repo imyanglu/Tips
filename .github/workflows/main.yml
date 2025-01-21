@@ -1,9 +1,8 @@
 name: tipsaction
 
 on:
-  # schedule:
-   # - cron: "*/50 0-12 * * *"
-  workflow_dispatch: # 支持手动触发
+   schedule:
+    - cron: "*/50 0-12 * * *"
 
 jobs:
   run-js-task:
