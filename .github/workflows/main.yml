@@ -2,7 +2,7 @@ name: tipsaction
 
 on:
  schedule:
-  - cron: "*58 0-12 * * *"
+  - cron: "4 0-12 * * *"
 
 jobs:
   run-js-task:
